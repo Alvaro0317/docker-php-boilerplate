@@ -28,4 +28,5 @@ class ListaCompraTest extends TestCase
     {
         $this->assertEquals('Manzana, Pera', $this->listaCompra->getListaCompra('Manzana Pera'));
     }
+
 }
