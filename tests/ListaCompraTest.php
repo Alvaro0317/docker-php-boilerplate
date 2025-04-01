@@ -21,5 +21,11 @@ class ListaCompraTest extends TestCase
     {
         $this->assertEquals('Manzana', $this->listaCompra->getListaCompra('Manzana'));
     }
-
+    /**
+     * @test
+     */
+    public function givenStringListaCompraReturnListaCompraSeparatedByComma(): void
+    {
+        $this->assertEquals('Manzana, Pera', $this->listaCompra->getListaCompra('Manzana Pera'));
+    }
 }
